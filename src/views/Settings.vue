@@ -17,6 +17,7 @@ onMounted(() => {
 const save = () => {
   session.setText(text.value)
   toast.add({ severity: 'success', summary: t('saved'), detail: '', life: 3000 })
+  console.log(session.getText())
 }
 
 </script>
